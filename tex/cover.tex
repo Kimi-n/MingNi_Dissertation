@@ -1,0 +1,61 @@
+%%
+%%% >>> Title Page
+%%
+%%
+%%%%********************** Chinese Title Page **************************************** 
+%%
+  \classification{}
+  \confidential{}
+  \UDC{}
+%% 标题格式 \title[short title for headers]{Long title of thesis}
+  \title[大规模网络传播行为中的关键问题研究]{大规模网络传播行为中的关键问题研究}
+  \author{倪铭}
+  \advisor{张宏}
+  \advisortitle{教授}
+  \coadvisor{}
+  \coadvisortitle{}
+  \degree{工学博士}
+  \major{计算机应用}
+  \interest{信息安全，数据挖掘}
+  \school{南京理工大学}
+  \submitdate{2016.10}
+  \incoverdate{2016年10月}
+%%
+%%%%********************** English Title Page **************************************** 
+%%
+  \englishtitle{Research on Key Issues of Spreading Behavior in Large Scale Networks}
+  \englishauthor{Ming Ni}
+  \englishadvisor{Hong Zhang}
+  \englishcoadvisor{}
+  \englishinstitute{Nanjing University of Science \& Technology}
+  \englishdate{October, 2016}
+  \englishdegree{Dissertation}
+%%
+%%%%********************** Generate CHN & Eng Title *********************************** 
+%%% 
+%%
+\maketitle
+%%
+\makeincovertitle
+%%
+\makeenglishtitle
+%% make statement page
+\makeatletter
+\cleardoublepage
+\thispagestyle{empty}
+\begin{center}
+\statement{
+	本学位论文是我在导师的指导下取得的研究成果,尽我所知,在本学位论文中,除了加以标注和致谢的部分外,不包含其他人已经发表或公布过的研究成果,也不包含我为获得任何教育机构的学位或学历而使用过的材料。与我一同工作的同事对本学位论文做出的贡献均已在论文中作了明确的说明。
+}%
+
+\accredit{
+	南京理工大学有权保存本学位论文的电子和纸质文档,可以借阅或上网公布本学位论文的部分或全部内容,可以向有关部门或机构送交并授权其保存、借阅或上网公布本学位论文的部分或全部内容。对于保密论文,按保密的有关规定和程序处理。
+}%
+\end{center}
+\clearpage
+\if@twoside
+  \thispagestyle{empty}
+  \cleardoublepage
+\fi
+ \makeatother
+%%%%*********************************** END *******************************************

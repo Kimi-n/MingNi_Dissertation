@@ -1,0 +1,112 @@
+\chapter{信息传播过程建模分析}
+
+\section{IaaS平台建模}
+\subsection{资源管理模型}
+
+IaaS平台
+\begin{equation}
+C=\{c_0,c_1,\dotsc,c_{m-1}\}
+\end{equation}
+为其提供的所有虚拟机配置的集合，其中$m$为提供的虚拟机配置的总数~\cite{Cheng2014,Guille2013,Kupavskii2012,Lin2013,Matsubara2012,Saito2012,Silva2013,Taxidou2014}。
+
+
+
+
+\section{工作流调度问题}
+
+\subsection{工作流定义}
+
+在\ref{intro:background:workflow}节中，我们已经对使用DAG图表示的科学工作流进行了定义，这里首先简单回顾这些定义，具体讨论参见\ref{intro:background:workflow}节：
+\begin{asparaitem}
+	\item 一个工作流定义为一个二元组$W=(T,D)$，其中$T$和$D$分别表示\textbf{任务}和\textbf{依赖}的集合;
+	\item $\pre{t}$和$\suc{t}$分别表示任务$t$的\textbf{直接前驱任务}集合和\textbf{直接后继任务}集合；
+	\item $t_{entry}$和$t_{exit}$分别为给定工作流的\textbf{开始任务}和\textbf{结束任务}。
+\end{asparaitem}
+
+
+\subsection{调度方案}
+\label{prob:prob:schedule}
+
+给定一个工作流$W=(T,D)$和一组虚拟机配置$C$，本文将一个针对IaaS环境的调度方案定义为一个二元组
+\begin{equation}
+s=(o,vs)，
+\end{equation}
+其中$o$为一个表示调度顺序的任务序列，$vs$为使用的虚拟机的集合。$vs$中的每个虚拟机$v\in vs$又被定义为一个二元组
+\begin{equation}
+v=(c,ts)，
+\end{equation}
+其中$c$为该虚拟机的配置，$ts$为在该虚拟机上运行的计算任务的集合。本文定义函数$\seqno{o,t}$返回任务$t$在序列$o$中的位置。同时，对虚拟机$v=(c,ts)$，定义$\conf{v}=c$和$\tasks{v}=ts$来分别获取其配置和所分配的任务。一个给定的调度$s=(o,vs)$为合法调度的条件为：
+\begin{compactenum}
+	\item $o$为$T$中所有元素的一个拓扑序列，即满足：
+	\begin{equation}
+	\nexists t_i, t_j \in T: t_i \in \pre{t_j} \land \seqno{o, t_i} > \seqno{o, t_j}，
+	\label{equ:prob:order}
+	\end{equation}
+	\item 同时，$vs$中所有$ts$的集合构成$T$的一个划分（Partition），即满足：
+	\begin{eqnarray}
+	& \bigcup\limits_{v \in vs}\tasks{v}=T，\\
+	& \nexists v \in vs:\tasks{v} = \emptyset ， \label{equ:partial_sched}\\
+	& \forall v_i, v_j \in vs, v_i \neq v_j:\tasks{v_i} \cap \tasks{v_j} = \emptyset 。
+	\end{eqnarray}
+\end{compactenum}
+
+一个调度$s$可能没有包含$W$中的所有任务（如在调度算法还没有决定所有任务的调度方案时），即不满足公式 \ref{equ:partial_sched}，本文称这样的调度为\textbf{部分调度}。部分调度不是一个合法的调度，但定义这样的调度可以简化调度算法的描述。
+
+
+\subsection{复杂的计费策略}
+\label{prob:chall:cost}
+
+基于虚拟机使用时间而不是实际CPU使用时间的计费策略同样会影响现有调度算法的调度效果。很多已有算法都假设一个任务所产生的费用取决于其所使用的实际计算资源的数量。例如，在POSH算法中，一个计算任务所产生的费用被假设为与其所实际消耗的CPU周期数线性相关或指数相关。这种情况下，已有的工作流调度算法通常依赖于以下两点假设：
+\begin{asparaenum}
+	\item 一个工作流应用执行所需费用是其所包含的所有任务所需费用的总和；
+	\item 在特定种类的资源上，某一计算任务所产生的费用始终是固定的。
+\end{asparaenum}
+
+然而，在IaaS平台中，一个任务产生的费用通常并不能直接计算，而需要考虑同一虚拟机上其他计算任务的运行情况。因此，前述两点假设在大多数情况下并不能成立。以Amazon EC2平台为例，若调度算法仍然在决策过程中依赖传统计费模型，则可能出现：
+\begin{asparaenum}
+	\item 如果某台虚拟机上的最后一个计算任务没有恰好用完最后一个\textit{partial hour}，则其实际产生的费用会比预计的多，如图\ref{fig:iaas_cost_0}所示；
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics{./img/chap2/iaas_cost_0.png}
+		\caption{工作流调度过程中实际费用比预计费用多的可能场景举例}
+		\label{fig:iaas_cost_0}
+	\end{figure}
+	
+	\item 如果某一任务和同一虚拟机上其他计算任务共享了最小计费周期，则其实际产生的费用会比预计的少，如图\ref{fig:iaas_cost_1}所示；
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics{./img/chap2/iaas_cost_1.png}
+		\caption{工作流调度过程中实际费用比预计费用少的可能场景举例}
+		\label{fig:iaas_cost_1}
+	\end{figure}
+	
+	\item 虚拟机在两个计算任务之间的空闲时间虽然没有被使用，但仍然会产生费用。然而，这部分费用在已有计费模型中并不能体现，如图\ref{fig:iaas_cost_2}所示。
+	
+	\begin{figure}[!h]
+		\centering
+		\includegraphics{./img/chap2/iaas_cost_2.png}
+		\caption{工作流调度过程中存在空闲但仍计费的时间段的场景举例}
+		\label{fig:iaas_cost_2}
+	\end{figure}
+\end{asparaenum}
+
+
+
+\begin{asparaenum}
+	
+	\item \textbf{Peer-to-Peer方式：}P2P通讯方式当然仍可被用在IaaS平台上，但可能不再是最好的选择。在IaaS平
+	\begin{inparaenum}
+		\item 将$v_0$的销毁延迟到$\tau_1$;或者，
+		\item 将$v_1$的创建提前到$\tau_0$;又或者，
+		\item 考虑最小计费周期等因素，选取一个合适的时刻$\tau'\in (\tau_0, \tau_1)$，将$v_0$的销毁推迟到$\tau'$，同时将$v_1$的创建提前到$\tau'$。
+	\end{inparaenum}
+
+	
+\end{asparaenum}
+
+既然P2P方式可能不再是IaaS平台上最适合工作流应用中不同任务间进行数据共享的最好选择，如何将工作流调度算法和更新的存储选项相结合以提供更好的调度和执行效果，也是IaaS平台上的工作流调度算法需要面对的挑战之一。
+
+\section{本章小结}
+本章

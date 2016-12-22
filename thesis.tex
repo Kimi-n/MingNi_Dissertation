@@ -1,0 +1,193 @@
+
+\documentclass{sty/njustThesis}
+
+
+\usepackage{algorithm}
+% noend in algorithms
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage[svgnames]{xcolor} 
+\usepackage{rotating}
+\usepackage{subfigure} 
+\usepackage{booktabs}
+\usepackage{newtxtext}
+
+% added by zkc
+\usepackage{caption}
+%\usepackage{subcaption}
+
+\usepackage[margin=10.5bp,font=small,labelfont=bf]{caption}
+%\captionsetup[subfloat]{captionskip=0pt,nearskip=0pt,farskip=0pt}
+\captionsetup[figure]{belowskip=0pt,aboveskip=0pt}
+\captionsetup[table]{belowskip=0pt,aboveskip=0pt}
+
+\usepackage[square,comma,super,sort&compress]{natbib}
+\bibliographystyle{chinesebst2005}
+\setlength{\bibsep}{0pt}
+
+\usepackage{paralist}
+\setdefaultenum{1)}{a)}{}{}
+\setdefaultleftmargin{3.5em}{1.5em}{}{}{}{}
+
+\usepackage{hyperref}
+\hypersetup{
+	bookmarksnumbered,
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	urlcolor=black
+}
+
+\usepackage{listings}
+\lstset{
+	language=Python, 
+	frame=single, 
+	mathescape=true, 
+	escapechar=|, 
+	basicstyle=\ttfamily\lst@ifdisplaystyle\small\fi,
+	breaklines=true,
+	showspaces=false,
+	xleftmargin=7.5pt,
+	framexleftmargin=3pt,
+	xrightmargin=7.5pt,
+	framexrightmargin=3pt,
+}
+
+
+
+
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+
+\setlength{\intextsep}{6pt}
+\setlength{\textfloatsep} {6pt}
+\setlength\abovecaptionskip{0pt}
+\setlength\belowcaptionskip{0pt}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\newcommand{\highlight}{\makebox[0pt][l]{\color{PapayaWhip}\rule[-0.45em]{\linewidth}{1.5em}}}
+
+\floatname{algorithm}{算法}
+
+% 设置算法的格式
+\makeatletter
+%设置自动分段算法格式
+\newenvironment{breakablealgorithm}
+{% \begin{breakablealgorithm}
+	\begin{center}
+		\refstepcounter{algorithm}% New algorithm
+		\hrule height.8pt depth0pt \kern2pt% \@fs@pre for \@fs@ruled
+		\renewcommand{\caption}[2][\relax]{% Make a new \caption
+			{\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+			\ifx\relax##1\relax % #1 is \relax
+			\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+			\else % #1 is not \relax
+			\addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+			\fi
+			\kern2pt\hrule\kern2pt
+		}
+	}{% \end{breakablealgorithm}
+	\kern2pt\hrule\relax% \@fs@post for \@fs@ruled
+\end{center}
+}
+\makeatother
+
+\algnewcommand\algorithmicrinput{\textbf{Input:}}
+\algnewcommand\algorithmicoutput{\textbf{Output:}}
+\algnewcommand\Input{\item[\algorithmicrinput]}%
+\algnewcommand\Output{\item[\algorithmicoutput]}%
+
+\newcommand\sForAll[2]{ \ForAll{#1}#2\EndFor} % snappy version of \ForAll...\EndFor
+\newcommand\sIf[2]{ \If{#1}#2\EndIf}          % snappy version of \If...\EndIf
+\newcommand\sFor[2]{ \For{#1}#2\EndFor} % snappy version
+\newcommand\sFunction[3]{ \Function{#1}{#2}#3\EndFunction}          % snappy version
+
+
+\input{define}
+
+\begin{document}
+\include{tex/cover}
+
+\frontmatter
+\include{tex/abstract}
+\tableofcontents
+\addcontentsline{toc}{chapter}{\contentsname}
+%% list figures and tables sperately
+\makeatletter
+\let\old@figure\l@figure
+\let\old@table\l@table
+\def\l@figure#1{\old@figure{图\ #1}}
+\def\l@table#1{\old@table{表\ #1}}
+\makeatother
+
+\listoffigures%   figures catalog
+\addcontentsline{toc}{chapter}{\listfigurename}
+
+\listoftables%    tables catalog
+\addcontentsline{toc}{chapter}{\listtablename}
+%
+\makeatletter
+\let\l@figure\old@figure
+\let\l@table\old@table
+\makeatother
+
+\mainmatter
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap1}
+
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap2}
+
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap3}
+
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap4}
+
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap5}
+
+\makeatletter
+\addtocontents{lof}{\vspace{-10pt}}
+\addtocontents{lot}{\vspace{-10pt}}
+\makeatother
+
+\include{tex/zkc_chap6}
+\include{tex/conclusion}
+
+\backmatter
+\ctexset{chapter/format={\bfseries\songti\zihao{3}}}
+\include{tex/thanks}
+{\addcontentsline{toc}{chapter}{\bibname}\centering\bibliography{bib/zkc_thesis}}
+\include{tex/appendix}
+\end{document}
