@@ -1,7 +1,7 @@
-
 \documentclass{sty/njustThesis}
 
-
+% \setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{4}
 \usepackage{algorithm}
 % noend in algorithms
 \usepackage{algpseudocode}
@@ -78,6 +78,7 @@
 \newcommand{\highlight}{\makebox[0pt][l]{\color{PapayaWhip}\rule[-0.45em]{\linewidth}{1.5em}}}
 
 \floatname{algorithm}{算法}
+% \floatname{breakablealgorithm}{算法}
 
 % 设置算法的格式
 \makeatletter
@@ -147,47 +148,54 @@
 \addtocontents{lot}{\vspace{-10pt}}
 \makeatother
 
-\include{tex/zkc_chap1}
+\include{tex/introduction}
 
 \makeatletter
 \addtocontents{lof}{\vspace{-10pt}}
 \addtocontents{lot}{\vspace{-10pt}}
 \makeatother
 
-\include{tex/zkc_chap2}
+\include{tex/chap1}
 
 \makeatletter
 \addtocontents{lof}{\vspace{-10pt}}
 \addtocontents{lot}{\vspace{-10pt}}
 \makeatother
 
-\include{tex/zkc_chap3}
+\include{tex/chap2}
 
 \makeatletter
 \addtocontents{lof}{\vspace{-10pt}}
 \addtocontents{lot}{\vspace{-10pt}}
 \makeatother
 
-\include{tex/zkc_chap4}
+\include{tex/chap3}
 
 \makeatletter
 \addtocontents{lof}{\vspace{-10pt}}
 \addtocontents{lot}{\vspace{-10pt}}
 \makeatother
 
-\include{tex/zkc_chap5}
+% \include{tex/zkc_chap4}
 
-\makeatletter
-\addtocontents{lof}{\vspace{-10pt}}
-\addtocontents{lot}{\vspace{-10pt}}
-\makeatother
+% \makeatletter
+% \addtocontents{lof}{\vspace{-10pt}}
+% \addtocontents{lot}{\vspace{-10pt}}
+% \makeatother
 
-\include{tex/zkc_chap6}
+% \include{tex/zkc_chap5}
+
+% \makeatletter
+% \addtocontents{lof}{\vspace{-10pt}}
+% \addtocontents{lot}{\vspace{-10pt}}
+% \makeatother
+
+% \include{tex/zkc_chap6}
 \include{tex/conclusion}
 
 \backmatter
 \ctexset{chapter/format={\bfseries\songti\zihao{3}}}
 \include{tex/thanks}
-{\addcontentsline{toc}{chapter}{\bibname}\centering\bibliography{bib/zkc_thesis}}
+{\addcontentsline{toc}{chapter}{\bibname}\centering\bibliography{bib/thesis}}
 \include{tex/appendix}
 \end{document}

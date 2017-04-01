@@ -1,0 +1,188 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{cnnic2017report}
+中国互联网络信息中心.
+\newblock 中国互联网络发展状况统计报告[R].
+\newblock Tech. rep., 2017.
+\newblock \url{http://www.cac.gov.cn/2017-01/22/c_1120352022.htm}.
+
+\bibitem{cncert2016report}
+国家互联网应急中心.
+\newblock 2015年中国互联网网络安全报告[R].
+\newblock Tech. rep., 2016.
+\newblock
+  \url{http://www.cert.org.cn/publish/main/46/2016/20160602141337392864292/20160602141337392864292_.html}.
+
+\bibitem{cohen1985computer}
+F.~Cohen.
+\newblock Computer Viruses[D]University of Southern California, 1985.
+
+\bibitem{mcgraw2000attacking}
+G.~McGraw, G.~Morrisett.
+\newblock Attacking Malicious Code: A Report to the Infosec Research
+  Council[J].
+\newblock IEEE software, 2000, 17(5):33--41.
+
+\bibitem{Neumann1966Theory}
+B.~A.~W. Neumann, John~Von.
+\newblock Theory of Self-reproducing Automata[M].
+\newblock University of Illinois Press, 1966:745.
+
+\bibitem{gov1994Standard}
+中华人民共和国国务院.
+\newblock 中华人民共和国计算机信息系统安全保护条例, 1994.
+
+\bibitem{skoudis2004malware}
+E.~Skoudis, L.~Zeltser.
+\newblock Malware: Fighting Malicious Code[M].
+\newblock Prentice Hall Professional, 2004.
+
+\bibitem{trojanhorseWiki}
+Wikipedia.
+\newblock Trojan Horse.
+\newblock \url{https://en.wikipedia.org/wiki/Trojan_horse_(computing)}.
+
+\bibitem{maier2008influence}
+M.~Maier, U.~Von~Luxburg, M.~Hein.
+\newblock Influence of Graph Construction on Graph-based Clustering
+  Measures.[C]//NIPS. 2008:1025--1032.
+
+\bibitem{zhu2005semi}
+X.~Zhu, J.~Lafferty, R.~Rosenfeld.
+\newblock Semi-supervised Learning with Graphs[M].
+\newblock Carnegie Mellon University, language technologies institute, school
+  of computer science, 2005.
+
+\bibitem{zhu2002learning}
+X.~Zhu, Z.~Ghahramani.
+\newblock Learning from Labeled and Unlabeled Data with Label Propagation[J].
+\newblock 2002.
+
+\bibitem{ye2011combining}
+Y.~Ye, T.~Li, S.~Zhu, et~al.
+\newblock Combining File Content and File Relations for Cloud Based Malware
+  Detection[C]//Proceedings of the 17th ACM SIGKDD international conference on
+  Knowledge discovery and data mining. 2011:222--230.
+
+\bibitem{tamersoy2014guilt}
+A.~Tamersoy, K.~Roundy, D.~H. Chau.
+\newblock Guilt by Association: Large Scale Malware Detection by Mining
+  File-relation Graphs[C]//Proceedings of the 20th ACM SIGKDD international
+  conference on Knowledge discovery and data mining. 2014:1524--1533.
+
+\bibitem{venzhega2013graph}
+A.~Venzhega, P.~Zhinalieva, N.~Suboch.
+\newblock Graph-based Malware Distributors Detection[C]//Proceedings of the
+  22nd International Conference on World Wide Web. 2013:1141--1144.
+
+\bibitem{diestel2010graph}
+R.~Diestel.
+\newblock Graph Theory[J].
+\newblock volume 173 of Graduate texts in mathematics, 4th Edition, 2010.
+
+\bibitem{watts1998collective}
+D.~J. Watts, S.~H. Strogatz.
+\newblock Collective Dynamics of ‘small-world’networks[J].
+\newblock nature, 1998, 393(6684):440--442.
+
+\bibitem{onnela2005intensity}
+J.-P. Onnela, J.~Saram{\"a}ki, J.~Kert{\'e}sz, et~al.
+\newblock Intensity and Coherence of Motifs in Weighted Complex Networks[J].
+\newblock Physical Review E, 2005, 71(6):065103.
+
+\bibitem{scott2012social}
+J.~Scott.
+\newblock Social Network Analysis[M].
+\newblock Sage Publications Ltd, 2012.
+
+\bibitem{freeman1977set}
+L.~C. Freeman.
+\newblock A Set of Measures of Centrality Based on Betweenness[J].
+\newblock Sociometry, 1977:35--41.
+
+\bibitem{angluin1988queries}
+D.~Angluin.
+\newblock Queries and Concept Learning[J].
+\newblock Machine learning, 1988, 2(4):319--342.
+
+\bibitem{lewis1994heterogeneous}
+D.~D. Lewis, J.~Catlett.
+\newblock Heterogeneous Uncertainty Sampling for Supervised
+  Learning[C]//Proceedings of the eleventh international conference on machine
+  learning. 1994:148--156.
+
+\bibitem{shannon1948math}
+C.~E. Shannon.
+\newblock A Mathematical Theory of Communication[J].
+\newblock The Bell System Technical Journal, 1948, 27(4):623--656.
+
+\bibitem{culotta2005reducing}
+A.~Culotta, A.~McCallum.
+\newblock Reducing Labeling Effort for Structured Prediction Tasks[C]//AAAI.
+  2005, 5:746--51.
+
+\bibitem{hoi2006large}
+S.~C. Hoi, R.~Jin, M.~R. Lyu.
+\newblock Large-scale Text Categorization by Batch Mode Active
+  Learning[C]//Proceedings of the 15th international conference on World Wide
+  Web. 2006:633--642.
+
+\bibitem{seung1992query}
+H.~S. Seung, M.~Opper, H.~Sompolinsky.
+\newblock Query by Committee[C]//Proceedings of the fifth annual workshop on
+  Computational learning theory. 1992:287--294.
+
+\bibitem{naoki1998query}
+N.~Abe, H.~Mamitsuka.
+\newblock Query Learning Strategies Using Boosting and Bagging[C]//J.~W.
+  Shavlik. Proceedings of the Fifteenth International Conference on Machine
+  Learning {(ICML} 1998), Madison, Wisconsin, USA, July 24-27, 1998. Morgan
+  Kaufmann, 1998:1--9.
+
+\bibitem{cohn1996active}
+D.~A. Cohn, Z.~Ghahramani, M.~I. Jordan.
+\newblock Active Learning with Statistical Models[J].
+\newblock Journal of artificial intelligence research, 1996, 4(1):129--145.
+
+\bibitem{hoi2006batch}
+S.~C. Hoi, R.~Jin, J.~Zhu, et~al.
+\newblock Batch Mode Active Learning and its Application to Medical Image
+  Classification[C]//Proceedings of the 23rd international conference on
+  Machine learning. 2006:417--424.
+
+\bibitem{nguyen2004active}
+H.~T. Nguyen, A.~Smeulders.
+\newblock Active Learning Using Pre-clustering[C]//Proceedings of the
+  twenty-first international conference on Machine learning. 2004:79.
+
+\bibitem{muslea2006active}
+I.~Muslea, S.~Minton, C.~A. Knoblock.
+\newblock Active Learning with Multiple Views[J].
+\newblock Journal of Artificial Intelligence Research, 2006, 27:203--233.
+
+\bibitem{cesa2010active}
+N.~Cesa-Bianchi, C.~Gentile, F.~Vitale, et~al.
+\newblock Active Learning on Graphs via Spanning Trees[C]//NIPS Workshop on
+  Networks Across Disciplines. 2010:1--27.
+
+\bibitem{cesa2010activetreesandgraph}
+N.~Cesa-Bianchi, C.~Gentile, F.~Vitale, et~al.
+\newblock Active Learning on Trees and Graphs[C]//In COLT. 2010:320--332.
+
+\bibitem{zhao2008scalable}
+W.~Zhao, J.~Long, E.~Zhu, et~al.
+\newblock A Scalable Algorithm for Graph-based Active
+  Learning[C]//International Workshop on Frontiers in Algorithmics.
+  2008:311--322.
+
+\end{thebibliography}

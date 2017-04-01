@@ -1,0 +1,37 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 特征码匹配流程\relax }}{4}{figure.caption.6}
+\vspace {-10pt}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 体系框架图\relax }}{6}{figure.caption.7}
+\vspace {-10pt}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 基于表\ref {tb_dataSample}的文件关联图示例\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 文件关联关系数据库\relax }}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 恶意软件与恶意软件之间的共存关系\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 恶意软件与良性文件之间的共存关系\relax }}{14}{figure.caption.12}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces $k$近邻图性能对比\relax }}{16}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {TP VS FN}}}{16}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {TN VS FP}}}{16}{figure.caption.14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 在大规模现实数据上算法的性能对比\relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 10折交叉验证准确率对比\relax }}{18}{figure.caption.18}
+\vspace {-10pt}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 总体框架\relax }}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 文件关联图可视化\relax }}{21}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {文件关联图}}}{21}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {恶意软件关联}}}{21}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {良性文件关联}}}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ``Word''和``Photoshop''局部聚类系数对比\relax }}{22}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Word}}}{22}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Photoshop}}}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 主动学习示意图\relax }}{26}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {基于流的主动学习}}}{26}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {基于池的主动学习}}}{26}{figure.caption.22}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 主动学习算法对预测的影响\relax }}{32}{figure.caption.24}
+\vspace {-10pt}
+\addvspace {10\p@ }
+\vspace {-10pt}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

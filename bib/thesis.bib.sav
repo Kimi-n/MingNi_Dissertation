@@ -1,0 +1,512 @@
+% Encoding: UTF-8
+
+@Book{zhu2005semi,
+  title     = {Semi-supervised learning with graphs},
+  publisher = {Carnegie Mellon University, language technologies institute, school of computer science},
+  year      = {2005},
+  author    = {Zhu, Xiaojin and Lafferty, John and Rosenfeld, Ronald},
+}
+
+@Article{zhu2002learning,
+  author    = {Zhu, Xiaojin and Ghahramani, Zoubin},
+  title     = {Learning from labeled and unlabeled data with label propagation},
+  year      = {2002},
+  publisher = {Citeseer},
+}
+
+@Article{ye2008intelligent,
+  author    = {Ye, Yanfang and Wang, Dingding and Li, Tao and Ye, Dongyi and Jiang, Qingshan},
+  title     = {An intelligent PE-malware detection system based on association mining},
+  journal   = {Journal in computer virology},
+  year      = {2008},
+  volume    = {4},
+  number    = {4},
+  pages     = {323--334},
+  publisher = {Springer},
+}
+
+@InProceedings{ye2007imds,
+  author       = {Ye, Yanfang and Wang, Dingding and Li, Tao and Ye, Dongyi},
+  title        = {IMDS: Intelligent malware detection system},
+  booktitle    = {Proceedings of the 13th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  year         = {2007},
+  pages        = {1043--1047},
+  organization = {ACM},
+}
+
+@InProceedings{ye2011combining,
+  author       = {Ye, Yanfang and Li, Tao and Zhu, Shenghuo and Zhuang, Weiwei and Tas, Egemen and Gupta, Umesh and Abdulhayoglu, Melih},
+  title        = {Combining file content and file relations for cloud based malware detection},
+  booktitle    = {Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  year         = {2011},
+  pages        = {222--230},
+  organization = {ACM},
+}
+
+@Article{ye2010cimds,
+  author    = {Ye, Yanfang and Li, Tao and Jiang, Qingshan and Wang, Youyu},
+  title     = {CIMDS: adapting postprocessing techniques of associative classification for malware detection},
+  journal   = {IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+  year      = {2010},
+  volume    = {40},
+  number    = {3},
+  pages     = {298--307},
+  publisher = {IEEE},
+}
+
+@InProceedings{ye2009intelligent,
+  author       = {Ye, Yanfang and Li, Tao and Jiang, Qingshan and Han, Zhixue and Wan, Li},
+  title        = {Intelligent file scoring system for malware detection from the gray list},
+  booktitle    = {Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  year         = {2009},
+  pages        = {1385--1394},
+  organization = {ACM},
+}
+
+@Article{ye2010hierarchical,
+  author    = {Ye, Yanfang and Li, Tao and Huang, Kai and Jiang, Qingshan and Chen, Yong},
+  title     = {Hierarchical associative classifier (HAC) for malware detection from the large and imbalanced gray list},
+  journal   = {Journal of Intelligent Information Systems},
+  year      = {2010},
+  volume    = {35},
+  number    = {1},
+  pages     = {1--20},
+  publisher = {Springer},
+}
+
+@Article{ye2009sbmds,
+  author    = {Ye, Yanfang and Chen, Lifei and Wang, Dingding and Li, Tao and Jiang, Qingshan and Zhao, Min},
+  title     = {SBMDS: an interpretable string based malware detection system using SVM ensemble with bagging},
+  journal   = {Journal in computer virology},
+  year      = {2009},
+  volume    = {5},
+  number    = {4},
+  pages     = {283--293},
+  publisher = {Springer},
+}
+
+@InProceedings{venzhega2013graph,
+  author       = {Venzhega, Andrei and Zhinalieva, Polina and Suboch, Nikolay},
+  title        = {Graph-based malware distributors detection},
+  booktitle    = {Proceedings of the 22nd International Conference on World Wide Web},
+  year         = {2013},
+  pages        = {1141--1144},
+  organization = {ACM},
+}
+
+@InProceedings{tamersoy2014guilt,
+  author       = {Tamersoy, Acar and Roundy, Kevin and Chau, Duen Horng},
+  title        = {Guilt by association: large scale malware detection by mining file-relation graphs},
+  booktitle    = {Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining},
+  year         = {2014},
+  pages        = {1524--1533},
+  organization = {ACM},
+}
+
+@InProceedings{siddiqui2008survey,
+  author       = {Siddiqui, Muazzam and Wang, Morgan C and Lee, Joohan},
+  title        = {A survey of data mining techniques for malware detection using file features},
+  booktitle    = {Proceedings of the 46th Annual Southeast Regional Conference on XX},
+  year         = {2008},
+  pages        = {509--510},
+  organization = {ACM},
+}
+
+@InProceedings{schultz2001data,
+  author       = {Schultz, Matthew G and Eskin, Eleazar and Zadok, F and Stolfo, Salvatore J},
+  title        = {Data mining methods for detection of new malicious executables},
+  booktitle    = {Security and Privacy, 2001. S\&P 2001. Proceedings. 2001 IEEE Symposium on},
+  year         = {2001},
+  pages        = {38--49},
+  organization = {IEEE},
+}
+
+@Article{ni2016findmal,
+  author    = {Ni, Ming and Li, Tao and Li, Qianmu and Zhang, Hong and Ye, Yanfang},
+  title     = {FindMal: A file-to-file social network basedmalware detection framework},
+  journal   = {Knowledge-Based Systems},
+  year      = {2016},
+  volume    = {112},
+  pages     = {142--151},
+  publisher = {Elsevier},
+}
+
+@InProceedings{ni2015file,
+  author       = {Ni, Ming and Li, Qianmu and Zhang, Hong and Li, Tao and Hou, Jun},
+  title        = {File Relation Graph Based Malware Detection Using Label Propagation},
+  booktitle    = {International Conference on Web Information Systems Engineering},
+  year         = {2015},
+  pages        = {164--176},
+  organization = {Springer},
+}
+
+@Article{masud2011cloud,
+  author    = {Masud, Mohammad M and Al-Khateeb, Tahseen M and Hamlen, Kevin W and Gao, Jing and Khan, Latifur and Han, Jiawei and Thuraisingham, Bhavani},
+  title     = {Cloud-based malware detection for evolving data streams},
+  journal   = {ACM Transactions on Management Information Systems (TMIS)},
+  year      = {2011},
+  volume    = {2},
+  number    = {3},
+  pages     = {16},
+  publisher = {ACM},
+}
+
+@InProceedings{bailey2007automated,
+  author       = {Bailey, Michael and Oberheide, Jon and Andersen, Jon and Mao, Z Morley and Jahanian, Farnam and Nazario, Jose},
+  title        = {Automated classification and analysis of internet malware},
+  booktitle    = {International Workshop on Recent Advances in Intrusion Detection},
+  year         = {2007},
+  pages        = {178--197},
+  organization = {Springer},
+}
+
+@InProceedings{abou2004n,
+  author       = {Abou-Assaleh, Tony and Cercone, Nick and Keselj, Vlado and Sweidan, Ray},
+  title        = {N-gram-based detection of new malicious code},
+  booktitle    = {Computer Software and Applications Conference, 2004. COMPSAC 2004. Proceedings of the 28th Annual International},
+  year         = {2004},
+  volume       = {2},
+  pages        = {41--42},
+  organization = {IEEE},
+}
+
+@InProceedings{chau2011polonium,
+  author       = {Chau, Duen Horng “Polo” and Nachenberg, Carey and Wilhelm, Jeffrey and Wright, Adam and Faloutsos, Christos},
+  title        = {Polonium: Tera-scale graph mining and inference for malware detection},
+  booktitle    = {Proceedings of the 2011 SIAM International Conference on Data Mining},
+  year         = {2011},
+  pages        = {131--142},
+  organization = {SIAM},
+}
+
+@InProceedings{chen2015intelligent,
+  author       = {Chen, Lingwei and Li, Tao and Abdulhayoglu, Melih and Ye, Yanfang},
+  title        = {Intelligent malware detection based on file relation graphs},
+  booktitle    = {Semantic Computing (ICSC), 2015 IEEE International Conference on},
+  year         = {2015},
+  pages        = {85--92},
+  organization = {IEEE},
+}
+
+@Article{reddy2006n,
+  author    = {Reddy, D Krishna Sandeep and Pujari, Arun K},
+  title     = {N-gram analysis for computer virus detection},
+  journal   = {Journal in Computer Virology},
+  year      = {2006},
+  volume    = {2},
+  number    = {3},
+  pages     = {231--239},
+  publisher = {Springer},
+}
+
+@Article{egele2012survey,
+  author    = {Egele, Manuel and Scholte, Theodoor and Kirda, Engin and Kruegel, Christopher},
+  title     = {A survey on automated dynamic malware-analysis techniques and tools},
+  journal   = {ACM Computing Surveys (CSUR)},
+  year      = {2012},
+  volume    = {44},
+  number    = {2},
+  pages     = {6},
+  publisher = {ACM},
+}
+
+@Article{filiol2006malware,
+  author    = {Filiol, Eric},
+  title     = {Malware pattern scanning schemes secure against black-box analysis},
+  journal   = {Journal in Computer Virology},
+  year      = {2006},
+  volume    = {2},
+  number    = {1},
+  pages     = {35--50},
+  publisher = {Springer},
+}
+
+@Article{filiol2007evaluation,
+  author    = {Filiol, Eric and Jacob, Gr{\'e}goire and Liard, Micka{\"e}l Le},
+  title     = {Evaluation methodology and theoretical model for antiviral behavioural detection strategies},
+  journal   = {Journal in Computer Virology},
+  year      = {2007},
+  volume    = {3},
+  number    = {1},
+  pages     = {23--37},
+  publisher = {Springer},
+}
+
+@InProceedings{kephart1994automatic,
+  author    = {Kephart, Jeffrey O and Arnold, William C},
+  title     = {Automatic extraction of computer virus signatures},
+  booktitle = {4th virus bulletin international conference},
+  year      = {1994},
+  pages     = {178--184},
+}
+
+@InProceedings{kolter2004learning,
+  author       = {Kolter, Jeremy Z and Maloof, Marcus A},
+  title        = {Learning to detect malicious executables in the wild},
+  booktitle    = {Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining},
+  year         = {2004},
+  pages        = {470--478},
+  organization = {ACM},
+}
+
+@InProceedings{maier2008influence,
+  author    = {Maier, Markus and Von Luxburg, Ulrike and Hein, Matthias},
+  title     = {Influence of graph construction on graph-based clustering measures.},
+  booktitle = {NIPS},
+  year      = {2008},
+  pages     = {1025--1032},
+}
+
+@Article{diestel2010graph,
+  author    = {Diestel, Reinhard},
+  title     = {Graph Theory},
+  journal   = {volume 173 of Graduate texts in mathematics, 4th Edition},
+  year      = {2010},
+  publisher = {Springer},
+}
+
+@Article{watts1998collective,
+  author    = {Watts, Duncan J and Strogatz, Steven H},
+  title     = {Collective dynamics of ‘small-world’networks},
+  journal   = {nature},
+  year      = {1998},
+  volume    = {393},
+  number    = {6684},
+  pages     = {440--442},
+  publisher = {Nature Publishing Group},
+}
+
+@Article{onnela2005intensity,
+  author    = {Onnela, Jukka-Pekka and Saram{\"a}ki, Jari and Kert{\'e}sz, J{\'a}nos and Kaski, Kimmo},
+  title     = {Intensity and coherence of motifs in weighted complex networks},
+  journal   = {Physical Review E},
+  year      = {2005},
+  volume    = {71},
+  number    = {6},
+  pages     = {065103},
+  publisher = {APS},
+}
+
+@Book{scott2012social,
+  title     = {Social Network Analysis},
+  publisher = {Sage Publications Ltd},
+  year      = {2012},
+  author    = {Scott, John},
+}
+
+@Article{freeman1977set,
+  author    = {Freeman, Linton C},
+  title     = {A set of measures of centrality based on betweenness},
+  journal   = {Sociometry},
+  year      = {1977},
+  pages     = {35--41},
+  publisher = {JSTOR},
+}
+
+@Article{angluin1988queries,
+  author    = {Angluin, Dana},
+  title     = {Queries and concept learning},
+  journal   = {Machine learning},
+  year      = {1988},
+  volume    = {2},
+  number    = {4},
+  pages     = {319--342},
+  publisher = {Springer},
+}
+
+@InProceedings{tang2002active,
+  author       = {Tang, Min and Luo, Xiaoqiang and Roukos, Salim},
+  title        = {Active learning for statistical natural language parsing},
+  booktitle    = {Proceedings of the 40th Annual Meeting on Association for Computational Linguistics},
+  year         = {2002},
+  pages        = {120--127},
+  organization = {Association for Computational Linguistics},
+}
+
+@InProceedings{culotta2005reducing,
+  author    = {Culotta, Aron and McCallum, Andrew},
+  title     = {Reducing labeling effort for structured prediction tasks},
+  booktitle = {AAAI},
+  year      = {2005},
+  volume    = {5},
+  pages     = {746--51},
+}
+
+@InProceedings{lewis1994heterogeneous,
+  author    = {Lewis, David D and Catlett, Jason},
+  title     = {Heterogeneous uncertainty sampling for supervised learning},
+  booktitle = {Proceedings of the eleventh international conference on machine learning},
+  year      = {1994},
+  pages     = {148--156},
+}
+
+@Article{shannon1948math,
+  author  = {C. E. Shannon},
+  title   = {A mathematical theory of communication},
+  journal = {The Bell System Technical Journal},
+  year    = {1948},
+  volume  = {27},
+  number  = {4},
+  pages   = {623--656},
+  month   = oct,
+  doi     = {10.1002/j.1538-7305.1948.tb00917.x},
+  issn    = {0005-8580},
+}
+
+@InProceedings{hoi2006large,
+  author       = {Hoi, Steven CH and Jin, Rong and Lyu, Michael R},
+  title        = {Large-scale text categorization by batch mode active learning},
+  booktitle    = {Proceedings of the 15th international conference on World Wide Web},
+  year         = {2006},
+  pages        = {633--642},
+  organization = {ACM},
+}
+
+@InProceedings{seung1992query,
+  author       = {Seung, H Sebastian and Opper, Manfred and Sompolinsky, Haim},
+  title        = {Query by committee},
+  booktitle    = {Proceedings of the fifth annual workshop on Computational learning theory},
+  year         = {1992},
+  pages        = {287--294},
+  organization = {ACM},
+}
+
+@Article{cohn1996active,
+  author  = {Cohn, David A and Ghahramani, Zoubin and Jordan, Michael I},
+  title   = {Active learning with statistical models},
+  journal = {Journal of artificial intelligence research},
+  year    = {1996},
+  volume  = {4},
+  number  = {1},
+  pages   = {129--145},
+}
+
+@InProceedings{naoki1998query,
+  author    = {Naoki Abe and Hiroshi Mamitsuka},
+  title     = {Query Learning Strategies Using Boosting and Bagging},
+  booktitle = {Proceedings of the Fifteenth International Conference on Machine Learning {(ICML} 1998), Madison, Wisconsin, USA, July 24-27, 1998},
+  year      = {1998},
+  editor    = {Jude W. Shavlik},
+  pages     = {1--9},
+  publisher = {Morgan Kaufmann},
+}
+
+@InProceedings{nguyen2004active,
+  author       = {Nguyen, Hieu T and Smeulders, Arnold},
+  title        = {Active learning using pre-clustering},
+  booktitle    = {Proceedings of the twenty-first international conference on Machine learning},
+  year         = {2004},
+  pages        = {79},
+  organization = {ACM},
+}
+
+@Article{muslea2006active,
+  author  = {Muslea, Ion and Minton, Steven and Knoblock, Craig A},
+  title   = {Active Learning with Multiple Views},
+  journal = {Journal of Artificial Intelligence Research},
+  year    = {2006},
+  volume  = {27},
+  pages   = {203--233},
+}
+
+@InProceedings{zhao2008scalable,
+  author       = {Zhao, Wentao and Long, Jun and Zhu, En and Liu, Yun},
+  title        = {A scalable algorithm for graph-based active learning},
+  booktitle    = {International Workshop on Frontiers in Algorithmics},
+  year         = {2008},
+  pages        = {311--322},
+  organization = {Springer},
+}
+
+@InProceedings{cesa2010active,
+  author       = {Cesa-Bianchi, Nicolo and Gentile, Claudio and Vitale, Fabio and Zappella, Giovanni},
+  title        = {Active learning on graphs via spanning trees},
+  booktitle    = {NIPS Workshop on Networks Across Disciplines},
+  year         = {2010},
+  pages        = {1--27},
+  organization = {Citeseer},
+}
+
+@InProceedings{cesa2010activetreesandgraph,
+  author    = {Cesa-Bianchi, Nicolo and Gentile, Claudio and Vitale, Fabio and Zappella, Giovanni},
+  title     = {Active learning on trees and graphs},
+  booktitle = {In COLT},
+  year      = {2010},
+  pages     = {320--332},
+}
+
+@InProceedings{hoi2006batch,
+  author       = {Hoi, Steven CH and Jin, Rong and Zhu, Jianke and Lyu, Michael R},
+  title        = {Batch mode active learning and its application to medical image classification},
+  booktitle    = {Proceedings of the 23rd international conference on Machine learning},
+  year         = {2006},
+  pages        = {417--424},
+  organization = {ACM},
+}
+
+@TechReport{cnnic2017report,
+  author    = {中国互联网络信息中心},
+  title     = {中国互联网络发展状况统计报告},
+  year      = {2017},
+  timestamp = {2017-01-22},
+  url       = {http://www.cac.gov.cn/2017-01/22/c_1120352022.htm},
+}
+
+@TechReport{cncert2016report,
+  author    = {国家互联网应急中心},
+  title     = {2015年中国互联网网络安全报告},
+  year      = {2016},
+  timestamp = {2016-06-02},
+  url       = {http://www.cert.org.cn/publish/main/46/2016/20160602141337392864292/20160602141337392864292_.html},
+}
+
+@PhdThesis{cohen1985computer,
+  author = {Cohen, Fred},
+  title  = {Computer viruses},
+  school = {University of Southern California},
+  year   = {1985},
+}
+
+@Article{mcgraw2000attacking,
+  author        = {McGraw, Gary and Morrisett, Greg},
+  title         = {Attacking malicious code: A report to the Infosec Research Council},
+  journal       = {IEEE software},
+  year          = {2000},
+  volume        = {17},
+  number        = {5},
+  pages         = {33--41},
+  __markedentry = {[Kimi:]},
+  publisher     = {IEEE},
+}
+
+@Book{Neumann1966Theory,
+  title     = {Theory of Self-Reproducing Automata},
+  publisher = {University of Illinois Press},
+  year      = {1966},
+  author    = {Neumann, John Von,Burks, Arthur W},
+  pages     = {745},
+}
+
+@Standard{gov1994Standard,
+  title  = {中华人民共和国计算机信息系统安全保护条例},
+  author = {中华人民共和国国务院},
+  year   = {1994},
+  pages  = {1-2},
+}
+
+@Book{skoudis2004malware,
+  title         = {Malware: Fighting malicious code},
+  publisher     = {Prentice Hall Professional},
+  year          = {2004},
+  author        = {Skoudis, Ed and Zeltser, Lenny},
+  __markedentry = {[Kimi:6]},
+}
+
+@Electronic{trojanhorseWiki,
+  author    = {Wikipedia},
+  title     = {Trojan Horse},
+  url       = {https://en.wikipedia.org/wiki/Trojan_horse_(computing)},
+  timestamp = {2013-11-01},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

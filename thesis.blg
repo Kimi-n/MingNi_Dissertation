@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: chinesebst2005.bst
+A level-1 auxiliary file: tex/cover.aux
+A level-1 auxiliary file: tex/abstract.aux
+A level-1 auxiliary file: tex/introduction.aux
+A level-1 auxiliary file: tex/chap1.aux
+A level-1 auxiliary file: tex/chap2.aux
+A level-1 auxiliary file: tex/chap3.aux
+A level-1 auxiliary file: tex/conclusion.aux
+A level-1 auxiliary file: tex/thanks.aux
+A level-1 auxiliary file: tex/appendix.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bib/thesis.bib
+Warning--entry type for "gov1994Standard" isn't style-file defined
+--line 979 of file bib/thesis.bib
+Warning--entry type for "trojanhorseWiki" isn't style-file defined
+--line 1009 of file bib/thesis.bib
+Warning--missing institution in cnnic2017report
+Warning--missing institution in cncert2016report
+`address' is a missing field, not a string, for entry cohen1985computer
+while executing---line 1567 of file chinesebst2005.bst
+Too many commas in name 1 of "Neumann, John Von,Burks, Arthur W" for entry Neumann1966Theory
+while executing---line 1567 of file chinesebst2005.bst
+Warning--missing publisher in maier2008influence
+Warning--empty journal in zhu2002learning
+Warning--missing publisher in ye2011combining
+Warning--missing publisher in tamersoy2014guilt
+Warning--missing publisher in venzhega2013graph
+Warning--missing publisher in lewis1994heterogeneous
+Warning--missing publisher in culotta2005reducing
+Warning--missing publisher in hoi2006large
+Warning--missing publisher in seung1992query
+Warning--missing publisher in hoi2006batch
+Warning--missing publisher in nguyen2004active
+Warning--missing publisher in cesa2010active
+Warning--missing publisher in cesa2010activetreesandgraph
+Warning--missing publisher in zhao2008scalable
+You've used 33 entries,
+            2994 wiz_defined-function locations,
+            846 strings with 10313 characters,
+and the built_in function-call counts, 102471 in all, are:
+= -- 8274
+> -- 1286
+< -- 6191
++ -- 9622
+- -- 341
+* -- 688
+:= -- 12304
+add.period$ -- 99
+call.type$ -- 33
+change.case$ -- 298
+chr.to.int$ -- 831
+cite$ -- 49
+duplicate$ -- 11386
+empty$ -- 6417
+format.name$ -- 98
+if$ -- 15995
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 319
+newline$ -- 164
+num.names$ -- 35
+pop$ -- 10895
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 7090
+stack$ -- 0
+substring$ -- 8443
+swap$ -- 558
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 16
+while$ -- 639
+width$ -- 35
+write$ -- 331
+(There were 2 error messages)
